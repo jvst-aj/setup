@@ -449,6 +449,11 @@ require("lazy").setup({
 		dependencies = { "nvim-lua/plenary.nvim" },
 		opts = { signs = false },
 	},
+
+	-- Plugin Lush for theme customization
+	{
+		"rktjmp/lush.nvim",
+	},
 })
 
 -- NOTE: LEADER GUIDE
