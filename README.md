@@ -23,7 +23,7 @@
 - Close tab: Control-w
 - Open panel right (Split vertically): Control-v, Leader-v
 - Open panel down (Split horizontally): Control-b, Leader-b
-- Close panel: Control-c, Leader-c
+- Close panel (out/quit): Control-o, Leader-q
 - Top panel: Control-k
 - Bottom panel: Control-j
 - Left panel: Control-h

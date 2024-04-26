@@ -652,7 +652,6 @@ vim.keymap.set("n", "<Leader>w", ":w!<CR>", opts)
 
 -- Quit file or close panel
 vim.keymap.set("n", "<Leader>q", ":q<CR>", opts)
-vim.keymap.set("n", "<Leader>c", ":q<CR>", opts)
 
 -- Force exit without save
 vim.keymap.set("n", "<Leader>x", ":q!<CR>", opts)
