@@ -1,3 +1,16 @@
+local map = vim.keymap.set
+
+-- NOTE: GLOBAL
+
+-- Set leader key
+-- See :help mapleader
+
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+-- Set escape
+map("i", "jj", "<Esc>")
+
 -- NOTE: INSTALL LAZY PACKAGE MANAGER
 -- See more: https://github.com/folke/lazy.nvim
 
@@ -16,6 +29,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 
--- Load keymaps and options after plugins
+-- NOTE: Load keymaps and options after plugins
 require("config.keymaps")
 require("config.options")

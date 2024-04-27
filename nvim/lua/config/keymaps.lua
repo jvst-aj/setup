@@ -4,16 +4,6 @@
 
 local map = vim.keymap.set
 
--- NOTE: GLOBAL
-
--- Set leader key
--- See :help mapleader
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
--- Set escape
-map("i", "jj", "<Esc>")
-
 -- NOTE: WINDOW: NAVIGATION
 
 -- Split editor vertically
