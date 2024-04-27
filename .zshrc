@@ -1,5 +1,9 @@
 eval "$(starship init zsh)"
 
+# Shell history size
+HISTSIZE=1000
+HISTFILESIZE=1000
+
 # Set default editor
 export EDITOR="nvim"
 export VISUAL="$EDITOR"
