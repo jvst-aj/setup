@@ -30,6 +30,11 @@ sudo curl -o atlas.deb https://fastdl.mongodb.org/mongocli/mongodb-atlas-cli_1.2
 sudo apt install -y ./atlas.deb
 sudo rm ./atlas.deb
 
+# NOTE: Install NodeJS & NVM (Node Version Manager)
+sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# Download and install NodeJS
+sudo nvm install 22
+
 # NOTE: Install Neovim
 sudo apt install -y neovim
 
@@ -53,7 +58,3 @@ sudo curl -sS https://starship.rs/install.sh | sh
 # Copy startship.toml to ~/.config/starship.toml
 starship preset pure-preset -o ~/.config/starship.toml
 
-# NOTE: Install NodeJS & NVM (Node Version Manager)
-sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-# Download and install NodeJS
-sudo nvm install 22
