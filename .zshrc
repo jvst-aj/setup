@@ -23,12 +23,6 @@ alias gp='git push'
 alias setupvim='gh repo clone JosaelPerez/config && rm -rf ~/.config/nvim && cp -r ./config/nvim ~/.config/nvim && rm -rf ./config'
 
 # Atlas CLI completions
-
-#compdef atlas
-compdef _atlas atlas
-
-# zsh completion for atlas                                -*- shell-script -*-
-
 __atlas_debug()
 {
     local file="$BASH_COMP_DEBUG_FILE"
