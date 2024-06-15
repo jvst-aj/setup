@@ -6,6 +6,9 @@ sudo apt update
 # NOTE: Install http clients
 sudo apt install -y curl wget httpie
 
+# NOTE: Install ssh
+sudo apt install -y ssh
+
 # NOTE: Install Git CLI
 sudo apt install -y git
 
