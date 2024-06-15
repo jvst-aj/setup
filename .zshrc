@@ -12,7 +12,7 @@ export VISUAL="$EDITOR"
 alias ll='ls -l'
 alias la='ls -la'
 
-# Set Git aliases
+# Set git aliases
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
@@ -21,6 +21,12 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias gp='git push'
 alias setupvim='gh repo clone JosaelPerez/config && rm -rf ~/.config/nvim && cp -r ./config/nvim ~/.config/nvim && rm -rf ./config'
+
+# Set kubernetes aliases
+alias k8='kubectl'
+
+# Set python aliases
+alias pip='python -m pip'
 
 # Atlas CLI completions
 __atlas_debug()
