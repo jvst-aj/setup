@@ -26,7 +26,7 @@ sudo mkdir -p -m 755 /etc/apt/keyrings &&
 # NOTE: Install Python
 sudo add-apt-repository ppa:deadsnakes/ppa -y
 sudo apt update
-sudo apt install python3.11
+sudo apt install -y python3.11
 sudo ln -s /usr/bin/python3.11 /usr/bin/python
 
 # NOTE: Install Mongosh CLI
