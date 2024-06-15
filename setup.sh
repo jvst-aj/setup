@@ -7,6 +7,8 @@ sudo apt update
 sudo apt install -y zsh
 # Set Zsh as default terminal
 sudo chsh -s $(which zsh)
+# Setup .zshrc file
+sudo cp .zshrc ~/.zshrc
 # Install Starship
 sudo curl -sS https://starship.rs/install.sh | sh
 # Set Custom Prompt
