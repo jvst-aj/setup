@@ -55,14 +55,6 @@ sudo apt install -y zsh
 # Set Zsh as default terminal
 sudo chsh -s $(which zsh)
 
-# NOTE: Install Warp
-sudo apt-get install -y wget gpg
-wget -qO- https://releases.warp.dev/linux/keys/warp.asc | gpg --dearmor >warpdotdev.gpg
-sudo install -y -D -o root -g root -m 644 warpdotdev.gpg /etc/apt/keyrings/warpdotdev.gpg
-sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/warpdotdev.gpg] https://releases.warp.dev/linux/deb stable main" > /etc/apt/sources.list.d/warpdotdev.list'
-rm warpdotdev.gpg
-sudo apt update && sudo apt install -y warp-terminal
-
 # NOTE: Install Starship
 sudo curl -sS https://starship.rs/install.sh | sh
 
