@@ -3,11 +3,21 @@
 # NOTE: Update
 sudo apt update
 
-# NOTE: Install http clients
-sudo apt install -y curl wget httpie
+# NOTE: Install and configure Zsh
+sudo apt install -y zsh
+# Set Zsh as default terminal
+sudo chsh -s $(which zsh)
+# Install Starship
+sudo curl -sS https://starship.rs/install.sh | sh
+# Set Custom Prompt
+# Copy startship.toml to ~/.config/starship.toml
+starship preset pure-preset -o ~/.config/starship.toml
 
 # NOTE: Install ssh
 sudo apt install -y ssh
+
+# NOTE: Install http clients
+sudo apt install -y curl wget httpie
 
 # NOTE: Install Git CLI
 sudo apt install -y git
@@ -26,11 +36,19 @@ sudo mkdir -p -m 755 /etc/apt/keyrings &&
 	sudo apt update &&
 	sudo apt install -y gh
 
+# NOTE: Install Neovim
+sudo apt install -y neovim
+
 # NOTE: Install Python
 sudo add-apt-repository ppa:deadsnakes/ppa -y
 sudo apt update
 sudo apt install -y python3.11
 sudo ln -s /usr/bin/python3.11 /usr/bin/python
+
+# NOTE: Install NodeJS & NVM (Node Version Manager)
+sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# Download and install NodeJS
+sudo nvm install 22
 
 # NOTE: Install Mongosh CLI
 sudo curl -o mongosh.deb https://downloads.mongodb.com/compass/mongodb-mongosh_2.2.5_amd64.deb
@@ -41,23 +59,3 @@ sudo rm ./mongosh.deb
 sudo curl -o atlas.deb https://fastdl.mongodb.org/mongocli/mongodb-atlas-cli_1.20.0_linux_x86_64.deb
 sudo apt install -y ./atlas.deb
 sudo rm ./atlas.deb
-
-# NOTE: Install NodeJS & NVM (Node Version Manager)
-sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-# Download and install NodeJS
-sudo nvm install 22
-
-# NOTE: Install Neovim
-sudo apt install -y neovim
-
-# NOTE: Install Zsh
-sudo apt install -y zsh
-# Set Zsh as default terminal
-sudo chsh -s $(which zsh)
-
-# NOTE: Install Starship
-sudo curl -sS https://starship.rs/install.sh | sh
-
-# NOTE: Set Custom Prompt
-# Copy startship.toml to ~/.config/starship.toml
-starship preset pure-preset -o ~/.config/starship.toml
