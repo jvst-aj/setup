@@ -3,11 +3,8 @@
 # NOTE: Update
 sudo apt update
 
-# NOTE: Install Curl
-sudo apt install -y curl
-
-# NOTE: Install Wget
-sudo apt install -y wget
+# NOTE: Install http clients
+sudo apt install -y curl wget httpie
 
 # NOTE: Install Git CLI
 sudo apt install -y git
