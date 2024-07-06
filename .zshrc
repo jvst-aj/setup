@@ -27,6 +27,10 @@ alias k8='kubectl'
 
 # Set python aliases
 alias pip='python -m pip'
+alias poetry='python -m poetry'
+
+# Poetry config
+export POETRY_VIRTUALENVS_IN_PROJECT=true
 
 # Atlas CLI completions
 __atlas_debug()
@@ -236,3 +240,7 @@ _atlas()
 if [ "$funcstack[1]" = "_atlas" ]; then
     _atlas
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
